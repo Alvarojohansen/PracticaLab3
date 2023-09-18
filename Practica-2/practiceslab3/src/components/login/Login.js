@@ -7,7 +7,7 @@ const Login = () => {
     setUsername(e.target.value);
   };
   const userRegisterHandler = () => {
-    if( username.toLowerCase().includes("o") && username.length > 0){
+    if( username.toLowerCase().includes("o") || username.length === 0){
       alert(
         "No puedes ingresar, ¡intenta con un usuario que no contenga la letra O o prueba rellenando los espacio!"
       )
