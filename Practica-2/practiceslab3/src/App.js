@@ -1,4 +1,5 @@
 import "./App.css";
+import Login from "./components/login/Login";
 import Table from "./components/table/Table";
 
 
@@ -16,10 +17,14 @@ function App() {
   return(
   <div className="App">
     <h1>Practica 2 obligatoria</h1>
-    <div className="ejer2">
-      
+    <h2>ejercicio 2</h2>
+    <div className="ejer2">   
         <Table netIncomes={netIncomes} />
         <p>Total de ingresos brutos: {averageIncome}</p>
+    </div>
+    <div>
+      <h2>ejercicio 3</h2>
+      <Login/>
     </div>
   </div>
   );
