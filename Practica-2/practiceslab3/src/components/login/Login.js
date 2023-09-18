@@ -7,12 +7,14 @@ const Login = () => {
     setUsername(e.target.value);
   };
   const userRegisterHandler = () => {
-    if( username.toLowerCase().includes("o") || username.length === 0){
+    if (username.toLowerCase().includes("o")) {
       alert(
-        "No puedes ingresar, ¡intenta con un usuario que no contenga la letra O o prueba rellenando los espacio!"
-      )
-    }else{
-      alert("ingresado correctamente")
+        "No puedes ingresar, ¡intenta con un usuario que no contenga la letra O!"
+      );
+    } else if (username.length === 0 || username.toLowerCase().includes("o")) {
+      alert("Usuario inválido para registrarse");
+    } else {
+      alert("ingresado correctamente");
     }
   };
 
