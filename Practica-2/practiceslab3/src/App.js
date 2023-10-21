@@ -26,6 +26,7 @@ function App() {
       <h2>ejercicio 3</h2>
       <Login/>
     </div>
+    
   </div>
   );
 }
