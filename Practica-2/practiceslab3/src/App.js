@@ -4,7 +4,6 @@ import Table from "./components/table/Table";
 
 
 
-
 function App() {
   const netIncomes = [
     { brand: "McDonalds", income: 1291283 },
@@ -14,6 +13,8 @@ function App() {
 
   const sumIncome = netIncomes.reduce((sum, item) => sum + item.income, 0);
   const averageIncome = sumIncome / netIncomes.length;
+
+
   return(
   <div className="App">
     <h1>Practica 2 obligatoria</h1>

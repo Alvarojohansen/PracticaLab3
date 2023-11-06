@@ -24,7 +24,9 @@ const Login = () => {
         onChange={changeUsernameHandler}
         placeholder="Ingrese su usuario"
       />
-      <button onClick={userRegisterHandler}>Registrarse</button>
+      <div>
+        <button onClick={userRegisterHandler}>Registrarse</button>
+      </div>
       <div>
         <p>{username}</p>
       </div>
